@@ -1,9 +1,0 @@
-{ 
-"speed" : 1,
-"momentum" : 0.3,
-"amount of input neurons" : 11,
-"amount of output neurons" : 4,
-"amount of hide neurons" : [70,50,40,30],
-"part from teaching set" : 2,
-"coeff. sigmoid" : 1
-}

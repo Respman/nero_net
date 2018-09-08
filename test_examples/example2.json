@@ -1,0 +1,5 @@
+{
+"description" : "truck",
+"generator" : 3,
+"input" :  [1,0,0,1,0,1,0,1]
+}

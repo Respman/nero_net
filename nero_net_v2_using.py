@@ -33,14 +33,13 @@ def nero_using(nero_list_of_weights, input_answers):
         current_layer_outputs = []
         for k in range(amount_of_neurons_in_layer[i]):
             summ = 1*(float(nero_list_of_weights.readline()))
-            for j in range(amount_of_neurons_in_layer[i-1]):
+            for j in range(1, amount_of_neurons_in_layer[i-1]+1):
                 ordinal_weight = (float(nero_list_of_weights.readline()))
-                summ += (float(layer_outputs[i-1][j]))*ordinal_weight
+                summ += (float(layer_outputs[i-1][j-1]))*ordinal_weight
             current_layer_outputs.append(1/(1+math.exp(-2*summ)))
             layer_outputs.append(current_layer_outputs)
 
     number_of_maximum_output = 0
-    print(f"{number_of_maximum_output}")
     for i in range(amount_of_neurons_in_layer[
         len(amount_of_neurons_in_layer)-1
     ]):
