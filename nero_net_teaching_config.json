@@ -1,0 +1,10 @@
+{ 
+"speed" : 0.3,
+"momentum" : 0.9,
+"amount of input neurons" : 8,
+"amount of output neurons" : 3,
+"amount of hide neurons" : [5],
+"part from teaching set" : 10,
+"directory_with_examples" : "test_examples",
+"weight_interval" : 0.1
+}
